@@ -6,7 +6,11 @@
     "dev": "bun run --watch src/index.ts"
   },
   "dependencies": {
-    "elysia": "latest"
+    "@types/mongoose": "^5.11.97",
+    "elysia": "latest",
+    "mongoose": "^8.0.0",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.2.2"
   },
   "devDependencies": {
     "bun-types": "latest"
