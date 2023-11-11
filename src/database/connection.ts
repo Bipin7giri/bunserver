@@ -1,7 +1,6 @@
 import mongoose, { ConnectOptions } from 'mongoose';
 
-const dbURI: string = 'mongodb+srv://bipin7giri:IRLouttbnPzptFnk@cluster0.2d9ffmd.mongodb.net/blogs';
-
+const dbURI: string = Bun.env.MONGO_URL?Bun.env.MONGO_URL:"";
 
 export const connectMongoDB = async (): Promise<void> => {
     try {
